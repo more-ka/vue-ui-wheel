@@ -20,7 +20,7 @@
             --border-radius: 4px;
             --border-color: #999;
             --color: #333;
-            --border-color-hover: #333;
+            --border-color-hover: #666;
         }
         body {
             font-size: var(--font-size)
@@ -34,10 +34,10 @@
 </head>
 <body>
 <div id='app'>
-    <g-button icon="settings" icon-position="left">
+    <g-button icon="settings" icon-position="left" :loading="loading1" @click="loading1 = !loading1">
         按钮
     </g-button>
-    <g-button icon="download" icon-position="right">
+    <g-button icon="download" icon-position="right" :loading="loading2" @click="loading2 = !loading2">
         下载
     </g-button>
 </div>
