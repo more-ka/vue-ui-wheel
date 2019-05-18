@@ -41,7 +41,7 @@
         border: 1px solid var(--border-color);
         border-radius: var(--border-radius);
         background: var(--button-bg);
-        vertical-align: middle;
+        vertical-align: top;
         > .content {
             order: 2;
         }
