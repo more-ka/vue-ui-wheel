@@ -34,7 +34,7 @@
         }
         font-size: var(--font-size);
         height: var(--button-height);
-        padding: 0 1em;
+        padding: 0 .7em;
         display: inline-flex;
         justify-content: center;
         align-items: center;
