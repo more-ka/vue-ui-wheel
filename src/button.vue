@@ -1,7 +1,7 @@
 <template>
     <button class="g-button" :class="{[`icon-${iconPosition}`]:true}" @click="$emit('click')">
         <g-icon v-if="icon && loading !== true" class="icon" :name="icon"></g-icon>
-        <g-icon name="loading2" class="loading icon" v-if="loading"></g-icon>
+        <g-icon name="loading" class="loading icon" v-if="loading"></g-icon>
         <div class="content">
             <slot></slot>
         </div>
@@ -53,7 +53,7 @@
             border-color: var(--border-color-hover);
         }
         &:active {
-            background-color: var(--button-active-bg);
+            background-color: var(--button-bg-active);
         }
         &:focus {
             outline: none;
