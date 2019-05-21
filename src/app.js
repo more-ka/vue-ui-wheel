@@ -18,6 +18,9 @@ new Vue({
 //单元测试
 
 import chai from 'chai'
+import spies from 'chai-spies'
+chai.use(spies)
+
 const expect = chai.expect
 //  svg
 {
@@ -89,4 +92,19 @@ const expect = chai.expect
     expect(order).to.eq('2')
     button.$el.remove()
     button.$destroy()
+}
+//  click事件
+{
+    const constructor = Vue.extend(Button)
+    const gButton= new  constructor({
+        propsData:{
+            icon:'settings'
+        }
+    })
+    gButton.$mount()
+    let spy = chai.spy(()=>{})
+    gButton.$on('click',spy)
+    let button = gButton.$el
+    button.click()
+    expect(spy).to.have.been.called()
 }
