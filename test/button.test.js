@@ -5,7 +5,7 @@ import Button from '../src/button'
 Vue.config.productionTip = false
 Vue.config.devtools = false
 
-describe('Button', () => {
+describe('Button组件', () => {
 
     it('存在.', () => {
         expect(Button).to.ok

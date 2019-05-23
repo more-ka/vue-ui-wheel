@@ -25,10 +25,10 @@ chai.use(spies)
 const expect = chai.expect
 //  svg
 {
-    const div = document.createElement('div')
-    document.querySelector('#app').appendChild(div)
+    let div = document.createElement('div')
+    document.body.querySelector('#app').appendChild(div)
     const constructor = Vue.extend(Button)
-    const button = new  constructor({
+    const button = new constructor({
         propsData:{
             icon:'settings'
         }
@@ -36,7 +36,7 @@ const expect = chai.expect
     button.$mount(div)
     let use = button.$el.querySelector('use')
     let href = use.getAttribute('xlink:href')
-    expect(href).to.eq('#i-settings')
+    expect(href).to.be.eq('#i-settings')
     button.$el.remove()
     button.$destroy()
 }
