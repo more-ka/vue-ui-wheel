@@ -1,6 +1,6 @@
 {
   "name": "vue-ui-wheel",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "这是一个UI框架",
   "main": "dist/index.js",
   "scripts": {
