@@ -1,11 +1,17 @@
 <template>
-    <div class="wrapper">
+    <div class="wrapper" :class="{error}">
         <input :value="value" :disabled="disabled" :readonly="readonly" type="text">
+        <template v-if="error">
+            <g-icon name="error" class="icon-error"></g-icon>
+            <span class="errorMessage">{{error}}</span>
+        </template>
     </div>
 </template>
 <script>
+    import Icon from './icon'
     export default {
         name: 'GuLuInput',
+        component:{Icon},
         props:{
             value:{
                 type: String
@@ -17,6 +23,9 @@
             readonly:{
                 type: Boolean,
                 default: false
+            },
+            error:{
+                type: Boolean
             }
         }
     }
@@ -29,29 +38,16 @@
     $button-bg-active: #eee;
     $box-shadow:rgba(0,0,0,0.5);
     $font-size: 14px;
-    .wrapper{
-        font-size: $font-size;
-        display: inline-block;
-        >input{
-            line-height: $height;
-            border:1px solid $border-color;
-            font-size: 14px;
-            border-radius: $border-radius;
-            padding: 0 0.5em;
-            font-style: inherit;
-            &:hover{
-                border:1px solid $border-color-hover;
-            }
-            &:focus{
-                box-shadow: inset 0 1px 3px $box-shadow;
-                outline:none;
-            }
-            &[disabled],&[readonly]{
-                border-color:#bbb;
-                color: #bbb;
-                cursor: not-allowed;
-            }
-
+    $red: #f1453d;
+    .wrapper{ font-size: $font-size; display: inline-flex;align-items: center;
+        >:not(:last-child){margin-right:0.5em;}
+        >input{line-height: $height;border:1px solid $border-color;font-size: 14px;border-radius: $border-radius;padding: 0 0.5em;font-style: inherit;
+            &:hover{border:1px solid $border-color-hover;}
+            &:focus{box-shadow: inset 0 1px 3px $box-shadow;outline:none;}
+            &[disabled],&[readonly]{border-color:#bbb;color: #bbb;cursor: not-allowed;} }
+        &.error{ >input{border:1px solid $red;}
+            .icon-error{fill:$red;}
+            .errorMessage{color: $red;}
         }
     }
 </style>

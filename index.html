@@ -7,38 +7,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>轮子</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        :root {
-            --button-height: 32px;
-            --font-size: 14px;
-            --button-bg: white;
-            --button-bg-active: #eee;
-            --border-radius: 4px;
-            --border-color: #999;
-            --color: #333;
-            --border-color-hover: #666;
-        }
-        body {
-            font-size: var(--font-size)
-        }
-        #app {
-            margin: 32px;
-        }
+        * {margin: 0;padding: 0;box-sizing: border-box;}
+        :root {--button-height: 32px;--font-size: 14px;--button-bg: white;--button-bg-active: #eee;--border-radius: 4px;--border-color: #999;--color: #333;--border-color-hover: #666;}
+        body {font-size: var(--font-size)}
+        #app {margin: 32px;}
     </style>
     <style type="text/css">
+        .box{margin:20px 0;}
     </style>
 </head>
 <body>
 <div id='app'>
-    <g-input value="马云"></g-input>
-    <g-input value="化腾" disabled></g-input>
-    <g-input value="思聪" readOnly></g-input>
-
-    <div style="margin:20px">
+    <div class="box">
+        <g-input value="马云"></g-input>
+        <g-input value="化腾" disabled></g-input>
+        <g-input value="思聪" readOnly></g-input>
+    </div>
+    <div class="box">
+        <g-input value="强东" error="密码格式不正确"></g-input>
+    </div>
+    <div class="box">
         <g-button icon="settings" icon-position="left" :loading="loading1" @click="loading1 = !loading1">
             按钮
         </g-button>
