@@ -44,7 +44,7 @@ describe('Input组件', () => {
             expect(inputElement.readOnly).to.equal(true)
         })
         it('可以接受 error', () => {
-            vm = new Constructor({
+             vm = new Constructor({
                 propsData: {
                     error: '错误'
                 }
@@ -53,6 +53,26 @@ describe('Input组件', () => {
             expect(useElement.getAttribute('xlink:href')).to.equal('#i-error')
             const errorMessage = vm.$el.querySelector('.errorMessage')
             expect(errorMessage.innerText).to.equal('错误')
+        })
+    })
+    describe('事件',()=>{
+        let vm
+        const Constructor = Vue.extend(Input)
+        afterEach(()=>{
+            vm.$destroy()
+        })
+        it('支持 change/input/focus/blur 事件',()=>{
+            ['change','input','focus','blur'].forEach((eventName)=>{
+                vm = new Constructor({}).$mount()
+                const callback = sinon.fake();
+                vm.$on(eventName,callback)
+                //触发 input 的 change事件
+                let event = new Event(eventName)
+                let inputElement = vm.$el.querySelector('input')
+                inputElement.dispatchEvent(event)
+                console.log(eventName);
+                expect(callback).to.have.been.called.calledWith(event)
+            })
         })
     })
 })
