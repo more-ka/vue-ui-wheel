@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bc5a7a2-fe1e-4a2c-9aea-6df9e3b6b312" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/src/row.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/col.vue" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -66,7 +66,7 @@
           <entry key="json" value="124" />
           <entry key="md" value="362" />
           <entry key="npmrc" value="16" />
-          <entry key="txt" value="578" />
+          <entry key="txt" value="597" />
           <entry key="vue" value="5102" />
           <entry key="yml" value="119" />
         </counts>
@@ -76,7 +76,7 @@
           <entry key="HTML" value="2880" />
           <entry key="JSON" value="124" />
           <entry key="JavaScript" value="3398" />
-          <entry key="PLAIN_TEXT" value="971" />
+          <entry key="PLAIN_TEXT" value="990" />
           <entry key="Vue.js" value="5107" />
           <entry key="YAML" value="119" />
         </counts>
@@ -123,7 +123,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/input.test.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="159">
@@ -133,16 +133,6 @@
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/row.vue">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/rol.vue">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -320,7 +310,7 @@
       <workItem from="1558663458558" duration="3038000" />
       <workItem from="1558700964874" duration="4255000" />
       <workItem from="1558851811742" duration="2988000" />
-      <workItem from="1558950720571" duration="23440000" />
+      <workItem from="1558950720571" duration="24078000" />
     </task>
     <task id="LOCAL-00001" summary="npm install vue">
       <created>1557999128640</created>
@@ -553,11 +543,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559055172466</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="添加 row and col">
+      <created>1559099226570</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1559099226571</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105226000" />
+    <option name="totallyTimeSpent" value="105864000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -569,7 +566,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="npm" order="0" side_tool="true" />
@@ -625,7 +622,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加 iconPosition 属性" />
     <MESSAGE value="验证 iconPosition 的值是否为 left 或 right 中的一个" />
     <MESSAGE value="将 svg 代码整理到 icon.vue" />
     <MESSAGE value="添加 loading 图标" />
@@ -650,7 +646,8 @@
     <MESSAGE value="props 参数的单元测试" />
     <MESSAGE value="添加 input 的时间测试用例" />
     <MESSAGE value="使 input 支持 v-model 双向绑定" />
-    <option name="LAST_COMMIT_MESSAGE" value="使 input 支持 v-model 双向绑定" />
+    <MESSAGE value="添加 row and col" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加 row and col" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -851,6 +848,12 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/col.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/row.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/input.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
@@ -860,12 +863,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/row.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rol.vue">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
