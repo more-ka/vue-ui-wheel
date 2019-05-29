@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bc5a7a2-fe1e-4a2c-9aea-6df9e3b6b312" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/src/row.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/input.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/input.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/input.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/input.test.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -44,7 +41,7 @@
           <entry key="md" value="4" />
           <entry key="npmrc" value="1" />
           <entry key="ts" value="1" />
-          <entry key="vue" value="25" />
+          <entry key="vue" value="27" />
           <entry key="yml" value="2" />
         </counts>
       </usages-collector>
@@ -57,7 +54,7 @@
           <entry key="PLAIN_TEXT" value="9" />
           <entry key="SourceMap" value="1" />
           <entry key="TypeScript" value="1" />
-          <entry key="Vue.js" value="25" />
+          <entry key="Vue.js" value="27" />
           <entry key="YAML" value="2" />
         </counts>
       </usages-collector>
@@ -69,7 +66,7 @@
           <entry key="json" value="124" />
           <entry key="md" value="362" />
           <entry key="npmrc" value="16" />
-          <entry key="txt" value="551" />
+          <entry key="txt" value="578" />
           <entry key="vue" value="5102" />
           <entry key="yml" value="119" />
         </counts>
@@ -79,7 +76,7 @@
           <entry key="HTML" value="2880" />
           <entry key="JSON" value="124" />
           <entry key="JavaScript" value="3398" />
-          <entry key="PLAIN_TEXT" value="944" />
+          <entry key="PLAIN_TEXT" value="971" />
           <entry key="Vue.js" value="5107" />
           <entry key="YAML" value="119" />
         </counts>
@@ -126,16 +123,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/input.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="67" column="42" lean-forward="true" selection-start-line="67" selection-start-column="42" selection-end-line="67" selection-end-column="42" />
+            <state relative-caret-position="159">
+              <caret line="56" column="6" lean-forward="true" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="6" />
               <folding>
                 <element signature="e#28#49#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/row.vue">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/rol.vue">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -214,9 +221,9 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="565" />
-    <option name="y" value="80" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="507" />
+    <option name="y" value="-30" />
     <option name="width" value="1240" />
     <option name="height" value="1072" />
   </component>
@@ -313,7 +320,7 @@
       <workItem from="1558663458558" duration="3038000" />
       <workItem from="1558700964874" duration="4255000" />
       <workItem from="1558851811742" duration="2988000" />
-      <workItem from="1558950720571" duration="22070000" />
+      <workItem from="1558950720571" duration="23440000" />
     </task>
     <task id="LOCAL-00001" summary="npm install vue">
       <created>1557999128640</created>
@@ -539,11 +546,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559038618506</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="使 input 支持 v-model 双向绑定">
+      <created>1559055172466</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1559055172466</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103856000" />
+    <option name="totallyTimeSpent" value="105226000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -555,7 +569,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="622" y="124" width="992" height="857" extended-state="1" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="npm" order="0" side_tool="true" />
@@ -578,7 +592,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Project" order="3" weight="0.19638069" />
+      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="3" visible="true" weight="0.19638069" />
     </layout>
     <layout-to-restore>
       <window_info id="npm" order="0" side_tool="true" />
@@ -611,7 +625,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="通过在g-button按钮上传参确定svg" />
     <MESSAGE value="添加 iconPosition 属性" />
     <MESSAGE value="验证 iconPosition 的值是否为 left 或 right 中的一个" />
     <MESSAGE value="将 svg 代码整理到 icon.vue" />
@@ -636,7 +649,8 @@
     <MESSAGE value="添加 input 输入框的 error 状态样式的" />
     <MESSAGE value="props 参数的单元测试" />
     <MESSAGE value="添加 input 的时间测试用例" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加 input 的时间测试用例" />
+    <MESSAGE value="使 input 支持 v-model 双向绑定" />
+    <option name="LAST_COMMIT_MESSAGE" value="使 input 支持 v-model 双向绑定" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -839,13 +853,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/input.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="67" column="42" lean-forward="true" selection-start-line="67" selection-start-column="42" selection-end-line="67" selection-end-column="42" />
+        <state relative-caret-position="159">
+          <caret line="56" column="6" lean-forward="true" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="6" />
           <folding>
             <element signature="e#28#49#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/row.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rol.vue">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
