@@ -10,7 +10,7 @@
         * {margin: 0;padding: 0;box-sizing: border-box;}
         :root {--button-height: 32px;--font-size: 14px;--button-bg: white;--button-bg-active: #eee;--border-radius: 4px;--border-color: #999;--color: #333;--border-color-hover: #666;}
         body {font-size: var(--font-size)}
-        #app {margin: 32px;}
+        #app {margin: 32px;border:1px solid black;}
     </style>
     <style type="text/css">
         .box{margin:20px 0;}
@@ -20,18 +20,27 @@
 <style>
 </style>
 <div id='app'>
-    <g-row>
+    <g-row gutter="20">
         <g-col>1</g-col>
         <g-col>2</g-col>
     </g-row>
-    <g-row>
+    <g-row gutter="20">
         <g-col>1</g-col>
         <g-col>2</g-col>
         <g-col>3</g-col>
     </g-row>
-    <g-row>
+    <g-row gutter="20">
         <g-col span="2">1</g-col>
         <g-col span="22">2</g-col>
+    </g-row>
+    <g-row gutter="20">
+        <g-col span="2">1</g-col>
+        <g-col span="20" offset="2">2</g-col>
+    </g-row>
+    <g-row>
+        <g-col span="2">1</g-col>
+        <g-col span="8" offset="2">2</g-col>
+        <g-col span="10" offset="2">2</g-col>
     </g-row>
     <hr>
     <div class="box">
