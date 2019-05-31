@@ -71,7 +71,7 @@
                 margin-left: ($n/24)*100%;
             }
         }
-        @media(min-width:576px) and (max-width:768px){
+        @media(min-width:577px){
         $class: col-ipad-;
         @for $n from 1 through 24 {
             &.#{$class}#{$n} {
@@ -85,7 +85,7 @@
                 }
             }
         }
-        @media(min-width:769px) and (max-width:992px){
+        @media(min-width:769px){
         $class: col-narrowPc-;
         @for $n from 1 through 24 {
             &.#{$class}#{$n} {
