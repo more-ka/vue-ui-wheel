@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7bc5a7a2-fe1e-4a2c-9aea-6df9e3b6b312" name="默认更改列表" comment="响应式 默认手机布局">
+    <list default="true" id="7bc5a7a2-fe1e-4a2c-9aea-6df9e3b6b312" name="默认更改列表" comment="重构">
+      <change afterPath="$PROJECT_DIR$/test/col.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/row.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/col.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/col.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,7 +36,7 @@
           <entry key="css" value="1" />
           <entry key="gitignore" value="3" />
           <entry key="html" value="7" />
-          <entry key="js" value="18" />
+          <entry key="js" value="22" />
           <entry key="json" value="10" />
           <entry key="map" value="1" />
           <entry key="md" value="4" />
@@ -50,7 +51,7 @@
           <entry key="CSS" value="1" />
           <entry key="HTML" value="7" />
           <entry key="JSON" value="10" />
-          <entry key="JavaScript" value="18" />
+          <entry key="JavaScript" value="22" />
           <entry key="PLAIN_TEXT" value="9" />
           <entry key="SourceMap" value="1" />
           <entry key="TypeScript" value="1" />
@@ -61,23 +62,23 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="15" />
-          <entry key="html" value="3308" />
-          <entry key="js" value="3476" />
+          <entry key="html" value="3325" />
+          <entry key="js" value="4154" />
           <entry key="json" value="124" />
           <entry key="md" value="362" />
           <entry key="npmrc" value="16" />
-          <entry key="txt" value="640" />
-          <entry key="vue" value="7121" />
+          <entry key="txt" value="651" />
+          <entry key="vue" value="7476" />
           <entry key="yml" value="119" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="3292" />
+          <entry key="HTML" value="3317" />
           <entry key="JSON" value="124" />
-          <entry key="JavaScript" value="3474" />
-          <entry key="PLAIN_TEXT" value="1033" />
-          <entry key="Vue.js" value="7139" />
+          <entry key="JavaScript" value="4144" />
+          <entry key="PLAIN_TEXT" value="1044" />
+          <entry key="Vue.js" value="7494" />
           <entry key="YAML" value="119" />
         </counts>
       </usages-collector>
@@ -105,17 +106,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/row.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="551">
               <caret line="44" column="24" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/col.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="683">
-              <caret line="86" column="9" lean-forward="true" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
+            <state relative-caret-position="1216">
+              <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -123,8 +124,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+            <state relative-caret-position="75">
+              <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/row.test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="355">
+              <caret line="53" column="2" lean-forward="true" selection-start-line="53" selection-start-column="2" selection-end-line="53" selection-end-column="2" />
+              <folding>
+                <element signature="e#28#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/input.test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="35" selection-end-column="10" />
+              <folding>
+                <element signature="e#28#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/button.test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+              <folding>
+                <element signature="e#28#49#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -159,11 +196,13 @@
         <option value="$PROJECT_DIR$/src/button-group.vue" />
         <option value="$PROJECT_DIR$/src/svg.js" />
         <option value="$PROJECT_DIR$/src/input.vue" />
-        <option value="$PROJECT_DIR$/test/input.test.js" />
         <option value="$PROJECT_DIR$/src/app.js" />
         <option value="$PROJECT_DIR$/src/row.vue" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/src/col.vue" />
+        <option value="$PROJECT_DIR$/test/input.test.js" />
+        <option value="$PROJECT_DIR$/test/row-test.js" />
+        <option value="$PROJECT_DIR$/test/row.test.js" />
       </list>
     </option>
   </component>
@@ -184,7 +223,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="651" />
+    <option name="x" value="475" />
+    <option name="y" value="176" />
     <option name="width" value="1325" />
     <option name="height" value="1103" />
   </component>
@@ -219,17 +259,6 @@
             <path>
               <item name="vue-ui-wheel" type="b2602c69:ProjectViewProjectNode" />
               <item name="vue-ui-wheel" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vue-ui-wheel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vue-ui-wheel" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="button.test.js" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="vue-ui-wheel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vue-ui-wheel" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -246,6 +275,7 @@
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="join lin&#9;null&#9;null&#10;格式化&#9;ACTION&#9;CodeFormatGroup&#10;多&#9;null&#9;null&#10;unsifn&#9;null&#9;null&#10;格式&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.last.introduce.type" value="CONST" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -282,7 +312,7 @@
       <workItem from="1558700964874" duration="4255000" />
       <workItem from="1558851811742" duration="2988000" />
       <workItem from="1558950720571" duration="36348000" />
-      <workItem from="1559180541978" duration="17976000" />
+      <workItem from="1559180541978" duration="24987000" />
     </task>
     <task id="LOCAL-00001" summary="npm install vue">
       <created>1557999128640</created>
@@ -550,11 +580,25 @@
       <option name="project" value="LOCAL" />
       <updated>1559228943959</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="响应式基本完成 移动端优先">
+      <created>1559261692313</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1559261692313</updated>
+    </task>
+    <task id="LOCAL-00040" summary="重构">
+      <created>1559354255266</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1559354255266</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136110000" />
+    <option name="totallyTimeSpent" value="143121000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -566,7 +610,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="521" y="0" width="1060" height="882" extended-state="0" />
+    <frame x="782" y="188" width="1060" height="882" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="npm" order="0" side_tool="true" />
@@ -585,7 +629,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3298611" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="调试" order="12" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.32933334" />
+      <window_info anchor="bottom" id="Messages" order="13" visible="true" weight="0.32933334" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -622,8 +666,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加 button group" />
-    <MESSAGE value="button group 样式微调" />
     <MESSAGE value="检测 g-button-group 的子元素是不是 button" />
     <MESSAGE value="开始单元测试" />
     <MESSAGE value="添加四个单元测试" />
@@ -647,7 +689,9 @@
     <MESSAGE value="row col 的基本功能" />
     <MESSAGE value="代码重构" />
     <MESSAGE value="响应式 默认手机布局" />
-    <option name="LAST_COMMIT_MESSAGE" value="响应式 默认手机布局" />
+    <MESSAGE value="响应式基本完成 移动端优先" />
+    <MESSAGE value="重构" />
+    <option name="LAST_COMMIT_MESSAGE" value="重构" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -783,26 +827,18 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/button.test.js">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/button.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1387">
-          <caret line="73" column="33" lean-forward="true" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/input.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="62" column="10" lean-forward="true" selection-start-line="62" selection-start-column="10" selection-end-line="62" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -823,13 +859,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/row.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="44" column="24" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/icon.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -837,17 +866,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/col.test.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/button.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+          <folding>
+            <element signature="e#28#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+        <state relative-caret-position="75">
+          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/col.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="683">
-          <caret line="86" column="9" lean-forward="true" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
+        <state relative-caret-position="1216">
+          <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/input.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="35" selection-end-column="10" />
+          <folding>
+            <element signature="e#28#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/row.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="44" column="24" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/row.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="53" column="2" lean-forward="true" selection-start-line="53" selection-start-column="2" selection-end-line="53" selection-end-column="2" />
+          <folding>
+            <element signature="e#28#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
