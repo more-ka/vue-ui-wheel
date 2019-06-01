@@ -37,8 +37,7 @@
             createClass (obj,str=''){
                 if(!obj){return []}
                 let array = [];
-                if(obj.span){  array.push(`col-${str}${obj.span}`);
-                    console.log(array);}
+                if(obj.span){  array.push(`col-${str}${obj.span}`)}
                 if(obj.offset){  array.push(`offset-${str}${obj.offset}`)}
                 return array
             }
