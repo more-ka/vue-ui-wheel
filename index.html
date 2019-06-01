@@ -22,52 +22,31 @@
 <div id='app'>
     <g-row gutter="20">
         <g-col span="24"
-               :ipad="{span:8}"
-               :narrow-pc="{span:4}"
-               :pc="{span:2}"
-        >1</g-col>
+               :ipad="{span:12}"
+               :narrow-pc="{span:8}"
+               :pc="{span:6}"></g-col>
         <g-col span="24"
-               :ipad="{span:16}"
-               :narrow-pc="{span:20}"
-               :pc="{span:22}"
-        >2</g-col>
+               :ipad="{span:12}"
+               :narrow-pc="{span:8}"
+               :pc="{span:6}"></g-col>
+        <g-col span="24"
+               :ipad="{span:12}"
+               :narrow-pc="{span:8}"
+               :pc="{span:6}"></g-col>
+        <g-col span="24"
+               :ipad="{span:12}"
+               :narrow-pc="{span:8}"
+               :pc="{span:6}"></g-col>
+        <g-col span="24"
+               :ipad="{span:12}"
+               :narrow-pc="{span:8}"
+               :pc="{span:6}"></g-col>
+        <g-col span="24"
+               :ipad="{span:12}"
+               :narrow-pc="{span:8}"
+               :pc="{span:6}"></g-col>
     </g-row>
-    <g-row gutter="20">
-        <g-col span="2">1</g-col>
-        <g-col span="20" offset="2">2</g-col>
-    </g-row>
-    <g-row>
-        <g-col span="2">1</g-col>
-        <g-col span="8" offset="2">2</g-col>
-        <g-col span="10" offset="2">2</g-col>
-    </g-row>
-    <hr>
-    <div class="box">
-        <g-input v-model="message"></g-input>
-        <p>{{message}}</p>
-        <button @click="message+=1">+1</button>
-        <g-input value="化腾" disabled></g-input>
-        <g-input value="思聪" readOnly></g-input>
-    </div>
-    <div class="box">
-        <g-input value="强东" @change="inputChange"></g-input>
-    </div>
-    <div class="box">
-        <g-input value="强东" error="密码格式不正确"></g-input>
-    </div>
-    <div class="box">
-        <g-button icon="settings" icon-position="left" :loading="loading1" @click="loading1 = !loading1">
-            按钮
-        </g-button>
-        <g-button icon="download" icon-position="right" :loading="loading2" @click="loading2 = !loading2">
-            下载
-        </g-button>
-        <g-button-group>
-            <g-button icon="left">上一页</g-button>
-            <g-button>更多</g-button>
-            <g-button icon="right" icon-position="right">下一页</g-button>
-        </g-button-group>
-    </div>
+
 </div>
 <script src="./src/app.js"></script>
 </body>

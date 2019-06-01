@@ -33,15 +33,25 @@
                 gutter:0
             }
         },
+        methods:{
+            createClass (obj,str=''){
+                if(!obj){return []}
+                let array = [];
+                if(obj.span){  array.push(`col-${str}${obj.span}`);
+                    console.log(array);}
+                if(obj.offset){  array.push(`offset-${str}${obj.offset}`)}
+                return array
+            }
+        },
         computed:{
             colClass(){
                 let {span,offset,ipad,narrowPc,pc} = this;
+                let createClass = this.createClass;
                 return [
-                    span && `col-${span}`,
-                    offset && `offset-${offset}`,
-                    ...(ipad && [`col-ipad-${ipad.span}`]),
-                    ...(narrowPc && [`col-narrowPc-${narrowPc.span}`]),
-                    ...(pc && [`col-pc-${pc.span}`]),
+                    ...createClass({span,offset}),
+                    ...createClass(ipad,'ipad-'),
+                    ...createClass(narrowPc,'narrow-pc-'),
+                    ...createClass(pc,'pc-'),
                 ]
             },
             colStyle(){
