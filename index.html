@@ -10,43 +10,22 @@
         * {margin: 0;padding: 0;box-sizing: border-box;}
         :root {--button-height: 32px;--font-size: 14px;--button-bg: white;--button-bg-active: #eee;--border-radius: 4px;--border-color: #999;--color: #333;--border-color-hover: #666;}
         body {font-size: var(--font-size)}
-        #app {margin: 32px;}
     </style>
     <style type="text/css">
-        .box{margin:20px 0;}
     </style>
 </head>
 <body>
 <style>
 </style>
 <div id='app'>
-    <g-row gutter="20">
-        <g-col span="24"
-               :ipad="{span:12}"
-               :narrow-pc="{span:8}"
-               :pc="{span:6}"></g-col>
-        <g-col span="24"
-               :ipad="{span:12}"
-               :narrow-pc="{span:8}"
-               :pc="{span:6}"></g-col>
-        <g-col span="24"
-               :ipad="{span:12}"
-               :narrow-pc="{span:8}"
-               :pc="{span:6}"></g-col>
-        <g-col span="24"
-               :ipad="{span:12}"
-               :narrow-pc="{span:8}"
-               :pc="{span:6}"></g-col>
-        <g-col span="24"
-               :ipad="{span:12}"
-               :narrow-pc="{span:8}"
-               :pc="{span:6}"></g-col>
-        <g-col span="24"
-               :ipad="{span:12}"
-               :narrow-pc="{span:8}"
-               :pc="{span:6}"></g-col>
-    </g-row>
-
+    <g-layout style="height:100vh">
+        <g-sider>sider</g-sider>
+        <g-layout>
+            <g-header>header</g-header>
+            <g-content>content</g-content>
+            <g-footer>footer</g-footer>
+        </g-layout>
+    </g-layout>
 </div>
 <script src="./src/app.js"></script>
 </body>
