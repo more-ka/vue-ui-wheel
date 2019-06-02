@@ -1,16 +1,32 @@
 <template>
-    <div class="sider">
-        <slot></slot>
-    </div>
+    <transition name="fade">
+        <div class="sider" v-if="visible">
+            <button @click="visible=false">关闭</button>
+            <slot></slot>
+        </div>
+    </transition>
 </template>
 <script>
     export default {
-        name: 'GuLuSider'
+        name: 'GuLuSider',
+        data(){
+            return {
+                visible: true
+            }
+        }
     }
+
 </script>
 <style lang="scss" scoped>
     .sider{
-        width:20%;
-        background: #eeeeee;
+        position: relative;
+        >button{
+            position: absolute;
+            right:10px;
+            top:10px;
+        }
+    }
+    .fade-enter-active, .fade-leave-active {
+        transition: all 0.5s;
     }
 </style>
