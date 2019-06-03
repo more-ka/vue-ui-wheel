@@ -1,7 +1,10 @@
 <template>
-    <div class="toast">
-        <slot></slot>
-        <span class="line" v-if="closeButton"></span>
+    <div class="toast" ref="wrapper">
+        <div class="content">
+            <slot v-if="!enableHtml"></slot>
+            <div v-else v-html="$slots.default[0]"></div>
+        </div>
+        <span class="line" v-if="closeButton" ref="line"></span>
         <span class="close" v-if="closeButton" @click="onClickButton">{{closeButton.text}}</span>
     </div>
 </template>
@@ -22,16 +25,30 @@
                 default(){
                     return{text:'关闭',callback:undefined}
                 }
+            },
+            enableHtml:{
+                type: Boolean,
+                default: false,
             }
         },
         mounted(){
-            if(this.autoClose){
-                setTimeout(()=>{
-                    this.close()
-                },this.autoCloseDelay*1000)
-            }
+            this.updateStyle()
+            this.execAutoClose()
         },
         methods:{
+            updateStyle(){
+                this.$nextTick(()=>{
+                    this.$refs.line.style.height =
+                        `${this.$refs.wrapper.getBoundingClientRect().height}px`
+                })
+            },
+            execAutoClose(){
+                if(this.autoClose){
+                    setTimeout(()=>{
+                        this.close()
+                    },this.autoCloseDelay*1000)
+                }
+            },
             close(){
                 this.$el.remove()
                 this.$destroy()
@@ -53,23 +70,27 @@
         position: fixed;
         top:0;
         left:50%;
-        transition: translateX(-50%);
+        transform: translateX(-50%);
         color: white;
         padding: 0 16px;
         border-radius: 4px;
-        height: $toast-height;
+        min-height: $toast-height;
         font-style: $font-size;
         display: flex;
         align-items: center;
         background:$toast-bg;
         box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.50);
-        >.line{
+        .content{
+            padding: 8px 0;
+        }
+        .line{
             border-left: 1px solid #666;
             height: 100%;
             margin-left: 16px;
             margin-right: 16px;
         }
-        >.close{
+        .close{
+            flex-shrink: 0;
         }
     }
 </style>
