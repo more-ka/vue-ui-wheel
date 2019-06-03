@@ -34,12 +34,20 @@ new Vue({
         loading2:false,
         message: 'hi',
     },
+    created(){
+        this.$toast('很多很多的文字',{
+            position: 'middle',
+            enableHtml: false,
+            closeButton: {
+                text: '朕已阅',
+                callback(){console.log('朕已阅')}
+            },
+            autoClose: false,
+            autoCloseDelay: 3
+        })
+    },
     methods:{
-        showToast(){
-            this.$toast('很多很多的文字',{
-                enableHtml: false
-            })
-        }
+        showToast(){}
     }
 })
 
