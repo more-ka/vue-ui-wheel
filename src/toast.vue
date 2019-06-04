@@ -13,12 +13,11 @@
         name: 'GuLuToast',
         props:{
             autoClose:{
-                type: Boolean,
-                default: true
-            },
-            autoCloseDelay:{
-                type: Number,
-                default: 30
+                type: [Boolean,Number],
+                default: 4,
+                validator(value){
+                    return value === false || typeof value === "number"
+                }
             },
             closeButton:{
                 type: Object,
@@ -60,7 +59,7 @@
                 if(this.autoClose){
                     setTimeout(()=>{
                         this.close()
-                    },this.autoCloseDelay*1000)
+                    },this.autoClose*1000)
                 }
             },
             close(){
@@ -81,7 +80,12 @@
     $font-size: 14px;
     $toast-height:40px;
     $toast-bg:rgba(0,0,0,0.74);
+    @keyframes fade {
+        0%{opacity: 0}
+        100%{opcity:100%}
+    }
     .toast{
+        animation:fade 1s;
         position: fixed;
         left:50%;
         color: white;

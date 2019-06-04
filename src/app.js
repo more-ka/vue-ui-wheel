@@ -46,8 +46,7 @@ new Vue({
                     text: '朕已阅',
                     callback(){console.log('朕已阅')}
                 },
-                autoClose: false,
-                autoCloseDelay: 3
+                autoClose: 3,
             })
         }
     }
