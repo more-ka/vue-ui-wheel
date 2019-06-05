@@ -25,7 +25,7 @@ describe('toast 组件', () => {
                 done()
             })
         })
-        it('接受 closeButton',()=>{
+        it('接受 closeButton',(done)=>{
             const callback = sinon.fake();
             const Constructor = Vue.extend(Toast)
             const vm = new Constructor({
@@ -38,8 +38,11 @@ describe('toast 组件', () => {
             }).$mount()
             let closeButton = vm.$el.querySelector('.close')
             expect(closeButton.textContent.trim()).to.eq('关掉它')
-            closeButton.click()
-            expect(callback).to.have.been.called
+            setTimeout(()=>{
+                closeButton.click()
+                expect(callback).to.have.been.called
+                done()
+            },200)
         })
         it('接受 enableHtml',()=>{
             const Constructor = Vue.extend(Toast)
