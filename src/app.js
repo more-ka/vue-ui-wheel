@@ -12,27 +12,36 @@ import Content from './content'
 import Footer from './footer'
 import Toast from './toast'
 import plugin from './plugin'
+import Tabs from './tabs'
+import TabsItem from './tabs-item'
+import TabsBody from './tabs-body'
+import TabsPane from './tabs-pane'
+import TabsHead from './tabs-head'
 
-Vue.component('g-button',Button)
-Vue.component('g-icon',Icon)
-Vue.component('g-button-group',buttonGroup)
-Vue.component('g-input',Input)
-Vue.component('g-row',Row)
-Vue.component('g-col',Col)
-Vue.component('g-layout',Layout)
-Vue.component('g-header',Header)
-Vue.component('g-sider',Sider)
-Vue.component('g-content',Content)
-Vue.component('g-footer',Footer)
-Vue.component('g-toast',Toast)
-Vue.use(plugin)
+Vue.component('g-button',Button);
+Vue.component('g-icon',Icon);
+Vue.component('g-button-group',buttonGroup);
+Vue.component('g-input',Input);
+Vue.component('g-row',Row);
+Vue.component('g-col',Col);
+Vue.component('g-layout',Layout);
+Vue.component('g-header',Header);
+Vue.component('g-sider',Sider);
+Vue.component('g-content',Content);
+Vue.component('g-footer',Footer);
+Vue.component('g-toast',Toast);
+Vue.component('g-tabs',Tabs);
+Vue.component('g-tabs-head',TabsHead);
+Vue.component('g-tabs-body',TabsBody);
+Vue.component('g-tabs-item',TabsItem);
+Vue.component('g-tabs-pane',TabsPane);
+
+Vue.use(plugin);
 
 new Vue({
     el: '#app',
     data:{
-        loading1:false,
-        loading2:false,
-        message: 'hi',
+        selectedTab: 'sports'
     },
     created(){
 
@@ -50,6 +59,6 @@ new Vue({
             })
         }
     }
-})
+});
 
 
