@@ -4,11 +4,12 @@
     </div>
 </template>
 <script>
+    import Vue from 'vue'
     export default {
         name:'GuLuTabs',
         props: {
             selected: {
-                type: Boolean,
+                type: String,
                 required: true
             },
             direction: {
@@ -19,13 +20,22 @@
                 }
             }
         },
-        created(){
-          // this.$emit('update:selected','xxxx')
+        data(){
+            return {
+                eventBus: new Vue()
+            }
+        },
+        provide(){
+            return{
+                eventBus: this.eventBus
+            }
+        },
+        mounted(){
+            this.eventBus.$emit('update:selected',this.selected)
         }
     }
 </script>
-<style>
+<style lang="scss" scoped>
     .tabs{
-
     }
 </style>
