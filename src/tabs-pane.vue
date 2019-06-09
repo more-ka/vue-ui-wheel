@@ -34,6 +34,7 @@
 </script>
 <style lang="scss" scoped>
     .tabs-pane{
+        padding:32px;
     &.active{
          background: #eee;
      }

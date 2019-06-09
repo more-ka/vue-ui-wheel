@@ -31,7 +31,15 @@
             }
         },
         mounted(){
-            this.eventBus.$emit('update:selected',this.selected)
+            this.$children.forEach((vm)=>{
+                if(vm.$options.name === 'GuLuTabsHead'){
+                    vm.$children.forEach((childVm)=>{
+                        if(childVm.$options.name === 'GuLuTabsItem' && childVm.name === this.selected){
+                            this.eventBus.$emit('update:selected',this.selected,childVm)
+                        }
+                    })
+                }
+            })
         }
     }
 </script>
