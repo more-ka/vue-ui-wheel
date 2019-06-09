@@ -36,7 +36,6 @@
     .tabs-pane{
         padding:32px;
     &.active{
-         background: #eee;
      }
     }
 </style>
