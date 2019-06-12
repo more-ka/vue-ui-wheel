@@ -1,6 +1,6 @@
 <template>
     <div class="popover" @click="onClick" ref="popover">
-        <div ref="contentWrapper" class="content-wrapper" v-if="visible">
+        <div ref="contentWrapper" class="content-wrapper" v-if="visible" :class=`position-${position}`>
             <slot name="content"></slot>
         </div>
         <div ref="buttonWrapper">
@@ -12,15 +12,39 @@
 <script>
 export default {
   name: "GuLuPopover",
+    props:{
+      position:{
+          type: String,
+          default: 'top',
+          validator(value){
+              return ['top','bottom','left','right'].indexOf(value) >= 0
+          }
+      }
+    },
   data() {
     return { visible: false };
   },
   methods: {
       positionContent(){
-          document.body.appendChild(this.$refs.contentWrapper)
-          let {left,top} = this.$refs.buttonWrapper.getBoundingClientRect()
-          this.$refs.contentWrapper.style.left = left+window.scrollX+'px'
-          this.$refs.contentWrapper.style.top = top+window.scrollY+'px'
+          const {contentWrapper} = this.$refs
+          document.body.appendChild(contentWrapper)
+          let {height,width,left,top} = this.$refs.buttonWrapper.getBoundingClientRect()
+          if(this.position === 'top'){
+              contentWrapper.style.left = left+window.scrollX+'px'
+              contentWrapper.style.top = top+window.scrollY+'px'
+          }else if(this.position === 'bottom'){
+              contentWrapper.style.left = left+window.scrollX+'px'
+              contentWrapper.style.top = top+height+window.scrollY+'px'
+          }else if(this.position === 'left'){
+              contentWrapper.style.left = left+window.scrollX+'px'
+              let height2 = contentWrapper.getBoundingClientRect().height
+              contentWrapper.style.top = top+(height-height2)/2+window.scrollY+'px'
+          }else if(this.position === 'right'){
+              contentWrapper.style.left = left+window.scrollX+width+'px'
+              let height2 = contentWrapper.getBoundingClientRect().height
+              contentWrapper.style.top = top+(height-height2)/2+window.scrollY+'px'
+          }
+
       },
       onClickDocument(e){
           if(this.$refs.popover &&
@@ -58,10 +82,10 @@ export default {
 
 <style lang="scss" scoped>
     $border-radius: 4px;
+    $distance: 16px;
 .popover {
   display: inline-block;
   vertical-align: top;
-  margin: 200px;
   position: relative;
 }
 .content-wrapper {
@@ -73,12 +97,9 @@ export default {
     /*box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);*/
     filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.5));
     background: white;
-    transform: translateY(-100%);
-    margin-top: -16px;
     max-width: 16em;
     word-break: break-all;
-}
-    .content-wrapper::before,.content-wrapper::after{
+    &::before,&::after{
         position: absolute;
         display: block;
         content:'';
@@ -86,12 +107,60 @@ export default {
         width: 0;
         height: 0;
     }
-    .content-wrapper::before {
-        border-top-color: black;
-        top: 100%;
+    &.position-top{
+        transform: translateY(-100%);
+        margin-top: -$distance;
+        &::before {
+            border-top-color: black;
+            top: 100%;
+        }
+        &::after{
+            border-top-color: white;
+            top:calc(100% - 1px);
+        }
     }
-    .content-wrapper::after{
-        border-top-color: white;
-        top:calc(100% - 1px);
+    &.position-bottom{
+        margin-top: $distance;
+        &::before {
+            border-bottom-color: black;
+            bottom: 100%;
+        }
+        &::after{
+            border-bottom-color: white;
+            bottom:calc(100% - 1px);
+        }
     }
+    &.position-left{
+        transform: translateX(-100%);
+        margin-left: -$distance;
+        &::before {
+            border-left-color: black;
+            transform: translateY(-50%);
+            top:50%;
+            left: 100%;
+        }
+        &::after{
+            border-left-color: white;
+            transform: translateY(-50%);
+            top:50%;
+            left:calc(100% - 1px);
+        }
+    }
+    &.position-right{
+        margin-left: $distance;
+        &::before {
+            border-right-color: black;
+            transform: translateY(-50%);
+            top:50%;
+            right: 100%;
+        }
+        &::after{
+            border-right-color: white;
+            transform: translateY(-50%);
+            top:50%;
+            right:calc(100% - 1px);
+        }
+    }
+}
+
 </style>
