@@ -45,41 +45,38 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="html" value="116" />
+          <entry key="html" value="203" />
           <entry key="js" value="23" />
-          <entry key="txt" value="25" />
-          <entry key="vue" value="819" />
+          <entry key="txt" value="78" />
+          <entry key="vue" value="1945" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="112" />
+          <entry key="HTML" value="199" />
           <entry key="JavaScript" value="23" />
-          <entry key="PLAIN_TEXT" value="26" />
-          <entry key="Vue.js" value="823" />
+          <entry key="PLAIN_TEXT" value="79" />
+          <entry key="Vue.js" value="1949" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="422">
+              <caret line="23" column="64" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/popover.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="26" column="36" lean-forward="true" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+            <state relative-caret-position="247">
+              <caret line="73" column="29" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -122,8 +119,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/app.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/popover.vue" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/src/popover.vue" />
       </list>
     </option>
   </component>
@@ -144,8 +141,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="330" />
-    <option name="y" value="123" />
+    <option name="x" value="408" />
+    <option name="y" value="45" />
     <option name="width" value="1280" />
     <option name="height" value="1040" />
   </component>
@@ -201,7 +198,7 @@
       <updated>1560215936706</updated>
       <workItem from="1560215944673" duration="5964000" />
       <workItem from="1560235847094" duration="155000" />
-      <workItem from="1560256438544" duration="4005000" />
+      <workItem from="1560256438544" duration="17736000" />
     </task>
     <task id="LOCAL-00001" summary="添加 popover 组件">
       <created>1560219789524</created>
@@ -217,14 +214,28 @@
       <option name="project" value="LOCAL" />
       <updated>1560235942139</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="解决如果存在overflow hidden造成的bug">
+      <created>1560265640772</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1560265640772</updated>
+    </task>
+    <task id="LOCAL-00004" summary="完成基本功能">
+      <created>1560315693654</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1560315693654</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10124000" />
+    <option name="totallyTimeSpent" value="23855000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="787" y="107" width="1024" height="832" extended-state="0" />
+    <frame x="752" y="36" width="1024" height="832" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="npm" order="0" side_tool="true" />
@@ -257,7 +268,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="添加 popover 组件" />
     <MESSAGE value="实现最基本popover" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现最基本popover" />
+    <MESSAGE value="解决如果存在overflow hidden造成的bug" />
+    <MESSAGE value="完成基本功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成基本功能" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -277,20 +290,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/popover.vue">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" column="36" lean-forward="true" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+        <state relative-caret-position="422">
+          <caret line="23" column="64" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/src/popover.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="247">
+          <caret line="73" column="29" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
         </state>
       </provider>
     </entry>

@@ -26,11 +26,10 @@ export default {
           if(this.$refs.popover &&
               (this.$refs.popover === e.target || this.$refs.popover.contains(e.target)))
           { return }
+          if(this.$refs.contentWrapper &&
+              (this.$refs.contentWrapper === e.target || this.$refs.contentWrapper.contains(e.target)))
+          { return }
               this.close()
-              console.log('关闭111');
-              console.log(e.target);
-          console.log(this.$refs.popover);
-
       },
       open(){
           this.visible = true
@@ -58,6 +57,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    $border-radius: 4px;
 .popover {
   display: inline-block;
   vertical-align: top;
@@ -66,10 +66,32 @@ export default {
 }
 .content-wrapper {
     position: absolute;
+    border-radius: $border-radius;
     left: 0;
-    border: 1px solid #eee;
-    padding: 8px;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+    border: 1px solid black;
+    padding: 0.5em 1em;
+    /*box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);*/
+    filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.5));
+    background: white;
     transform: translateY(-100%);
+    margin-top: -16px;
+    max-width: 16em;
+    word-break: break-all;
 }
+    .content-wrapper::before,.content-wrapper::after{
+        position: absolute;
+        display: block;
+        content:'';
+        border: 10px solid transparent;
+        width: 0;
+        height: 0;
+    }
+    .content-wrapper::before {
+        border-top-color: black;
+        top: 100%;
+    }
+    .content-wrapper::after{
+        border-top-color: white;
+        top:calc(100% - 1px);
+    }
 </style>
