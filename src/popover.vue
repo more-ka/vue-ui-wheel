@@ -1,6 +1,6 @@
 <template>
-    <div class="popover" @click.stop="onClick">
-        <div ref="contentWrapper" class="content-wrapper" v-if="visible"  @click.stop>
+    <div class="popover" @click="onClick" ref="popover">
+        <div ref="contentWrapper" class="content-wrapper" v-if="visible">
             <slot name="content"></slot>
         </div>
         <div ref="buttonWrapper">
@@ -16,21 +16,42 @@ export default {
     return { visible: false };
   },
   methods: {
-    onClick() {
-      this.visible = !this.visible;
-      if (this.visible === true) {
-        setTimeout(() => {
-            document.body.appendChild(this.$refs.contentWrapper)
-            let {left,top} = this.$refs.buttonWrapper.getBoundingClientRect()
-            this.$refs.contentWrapper.style.left = left+window.scrollX+'px'
-            this.$refs.contentWrapper.style.top = top+window.scrollY+'px'
-            let eventHandler = ()=>{
-                this.visible = false;
-                document.removeEventListener('click',eventHandler)
+      positionContent(){
+          document.body.appendChild(this.$refs.contentWrapper)
+          let {left,top} = this.$refs.buttonWrapper.getBoundingClientRect()
+          this.$refs.contentWrapper.style.left = left+window.scrollX+'px'
+          this.$refs.contentWrapper.style.top = top+window.scrollY+'px'
+      },
+      onClickDocument(e){
+          if(this.$refs.popover &&
+              (this.$refs.popover === e.target || this.$refs.popover.contains(e.target)))
+          { return }
+              this.close()
+              console.log('关闭111');
+              console.log(e.target);
+          console.log(this.$refs.popover);
+
+      },
+      open(){
+          this.visible = true
+          this.$nextTick(() => {
+              this.positionContent()
+              document.addEventListener("click", this.onClickDocument);
+          });
+      },
+      close(){
+          this.visible = false;
+          document.removeEventListener('click',this.onClickDocument)
+      },
+    onClick(event) {
+        if(this.$refs.buttonWrapper.contains(event.target)){
+            console.log('button')
+            if (this.visible === true) {
+                this.close()
+            }else{
+                this.open()
             }
-            document.addEventListener("click", eventHandler);
-        });
-      }
+        }
     }
   }
 };
