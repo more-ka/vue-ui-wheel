@@ -1,7 +1,7 @@
 <template>
     <div class="popover" ref="popover">
         <div ref="contentWrapper" class="content-wrapper" v-if="visible" :class=`position-${position}`>
-            <slot name="content"></slot>
+            <slot name="content" :close="close"></slot>
         </div>
         <div ref="buttonWrapper">
             <slot></slot>
@@ -115,13 +115,12 @@
 
 <style lang="scss" scoped>
     $border-radius: 4px;
-    $distance: 16px;
+    $distance: 12px;
     .popover {
         display: inline-block;
         vertical-align: top;
         position: relative;
     }
-
     .content-wrapper {
         position: absolute;
         border-radius: $border-radius;
@@ -137,7 +136,7 @@
             position: absolute;
             display: block;
             content: '';
-            border: 10px solid transparent;
+            border: 6px solid transparent;
             width: 0;
             height: 0;
         }
@@ -147,10 +146,12 @@
             &::before {
                 border-top-color: black;
                 top: 100%;
+                border-bottom: none;
             }
             &::after {
                 border-top-color: white;
                 top: calc(100% - 1px);
+                border-bottom: none;
             }
         }
         &.position-bottom {
@@ -158,10 +159,12 @@
             &::before {
                 border-bottom-color: black;
                 bottom: 100%;
+                border-top: none;
             }
             &::after {
                 border-bottom-color: white;
                 bottom: calc(100% - 1px);
+                border-top: none;
             }
         }
         &.position-left {
@@ -172,12 +175,14 @@
                 transform: translateY(-50%);
                 top: 50%;
                 left: 100%;
+                border-right: none;
             }
             &::after {
                 border-left-color: white;
                 transform: translateY(-50%);
                 top: 50%;
                 left: calc(100% - 1px);
+                border-right: none;
             }
         }
         &.position-right {
@@ -187,12 +192,14 @@
                 transform: translateY(-50%);
                 top: 50%;
                 right: 100%;
+                border-left: none;
             }
             &::after {
                 border-right-color: white;
                 transform: translateY(-50%);
                 top: 50%;
                 right: calc(100% - 1px);
+                border-left: none;
             }
         }
     }
