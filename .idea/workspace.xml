@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="465280a5-8a71-4508-9c12-7d0d282a1a99" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/popover.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/popover.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,42 +20,43 @@
         <counts>
           <entry key="project.closed" value="2" />
           <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
           <entry key="html" value="1" />
-          <entry key="js" value="1" />
-          <entry key="vue" value="1" />
+          <entry key="js" value="3" />
+          <entry key="vue" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="1" />
-          <entry key="JavaScript" value="1" />
+          <entry key="JavaScript" value="3" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Vue.js" value="1" />
+          <entry key="Vue.js" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="html" value="203" />
+          <entry key="html" value="290" />
           <entry key="js" value="23" />
-          <entry key="txt" value="78" />
-          <entry key="vue" value="1945" />
+          <entry key="txt" value="112" />
+          <entry key="vue" value="2779" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="199" />
+          <entry key="HTML" value="283" />
           <entry key="JavaScript" value="23" />
-          <entry key="PLAIN_TEXT" value="79" />
-          <entry key="Vue.js" value="1949" />
+          <entry key="PLAIN_TEXT" value="113" />
+          <entry key="Vue.js" value="2786" />
         </counts>
       </usages-collector>
     </session>
@@ -66,8 +66,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="23" column="64" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
+            <state relative-caret-position="517">
+              <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -75,10 +78,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/popover.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="73" column="29" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
+            <state relative-caret-position="285">
+              <caret line="35" column="88" lean-forward="true" selection-start-line="35" selection-start-column="88" selection-end-line="35" selection-end-column="88" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tabs.vue">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -140,9 +148,9 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="408" />
-    <option name="y" value="45" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="332" />
+    <option name="y" value="65" />
     <option name="width" value="1280" />
     <option name="height" value="1040" />
   </component>
@@ -160,6 +168,16 @@
             <path>
               <item name="vue-ui-wheel" type="b2602c69:ProjectViewProjectNode" />
               <item name="vue-ui-wheel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue-ui-wheel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue-ui-wheel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue-ui-wheel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue-ui-wheel" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -198,7 +216,8 @@
       <updated>1560215936706</updated>
       <workItem from="1560215944673" duration="5964000" />
       <workItem from="1560235847094" duration="155000" />
-      <workItem from="1560256438544" duration="17736000" />
+      <workItem from="1560256438544" duration="23666000" />
+      <workItem from="1560414760494" duration="1343000" />
     </task>
     <task id="LOCAL-00001" summary="添加 popover 组件">
       <created>1560219789524</created>
@@ -228,14 +247,28 @@
       <option name="project" value="LOCAL" />
       <updated>1560315693654</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="添加默认样式">
+      <created>1560328179863</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1560328179863</updated>
+    </task>
+    <task id="LOCAL-00006" summary="通过传入position,实现四个方向的popover">
+      <created>1560354821287</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1560354821287</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23855000" />
+    <option name="totallyTimeSpent" value="31128000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="752" y="36" width="1024" height="832" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="npm" order="0" side_tool="true" />
@@ -256,7 +289,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" content_ui="combo" x="1254" y="138" width="252" height="722" id="Project" order="3" visible="true" weight="0.24950495" />
+      <window_info active="true" anchor="right" content_ui="combo" x="1254" y="138" width="252" height="722" id="Project" order="3" visible="true" weight="0.1640625" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,9 +303,42 @@
     <MESSAGE value="实现最基本popover" />
     <MESSAGE value="解决如果存在overflow hidden造成的bug" />
     <MESSAGE value="完成基本功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成基本功能" />
+    <MESSAGE value="添加默认样式" />
+    <MESSAGE value="通过传入position,实现四个方向的popover" />
+    <option name="LAST_COMMIT_MESSAGE" value="通过传入position,实现四个方向的popover" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/test/input.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/button.test.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/input.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-95" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/button.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tabs.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -290,17 +356,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="23" column="64" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/popover.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="73" column="29" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
+        <state relative-caret-position="285">
+          <caret line="35" column="88" lean-forward="true" selection-start-line="35" selection-start-column="88" selection-end-line="35" selection-end-column="88" />
         </state>
       </provider>
     </entry>

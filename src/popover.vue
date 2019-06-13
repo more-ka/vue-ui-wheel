@@ -26,25 +26,18 @@ export default {
   },
   methods: {
       positionContent(){
-          const {contentWrapper} = this.$refs
-          document.body.appendChild(contentWrapper)
-          let {height,width,left,top} = this.$refs.buttonWrapper.getBoundingClientRect()
-          if(this.position === 'top'){
-              contentWrapper.style.left = left+window.scrollX+'px'
-              contentWrapper.style.top = top+window.scrollY+'px'
-          }else if(this.position === 'bottom'){
-              contentWrapper.style.left = left+window.scrollX+'px'
-              contentWrapper.style.top = top+height+window.scrollY+'px'
-          }else if(this.position === 'left'){
-              contentWrapper.style.left = left+window.scrollX+'px'
-              let height2 = contentWrapper.getBoundingClientRect().height
-              contentWrapper.style.top = top+(height-height2)/2+window.scrollY+'px'
-          }else if(this.position === 'right'){
-              contentWrapper.style.left = left+window.scrollX+width+'px'
-              let height2 = contentWrapper.getBoundingClientRect().height
-              contentWrapper.style.top = top+(height-height2)/2+window.scrollY+'px'
-          }
-
+          const {contentWrapper} = this.$refs;
+          document.body.appendChild(contentWrapper);
+          let {height,width,left,top} = this.$refs.buttonWrapper.getBoundingClientRect();
+          let height2 = contentWrapper.getBoundingClientRect().height;
+          let positionValue = {
+              top:{ left:left+window.scrollX,top:top+window.scrollY},
+              bottom:{left:left+window.scrollX,top:top+height+window.scrollY},
+              left:{left:left+window.scrollX,top:top+(height-height2)/2+window.scrollY},
+              right:{left:left+window.scrollX+width,top:top+(height-height2)/2+window.scrollY}
+          };
+          contentWrapper.style.top = positionValue[this.position].top+'px';
+          contentWrapper.style.left = positionValue[this.position].left+'px'
       },
       onClickDocument(e){
           if(this.$refs.popover &&
@@ -56,9 +49,9 @@ export default {
               this.close()
       },
       open(){
-          this.visible = true
+          this.visible = true;
           this.$nextTick(() => {
-              this.positionContent()
+              this.positionContent();
               document.addEventListener("click", this.onClickDocument);
           });
       },
@@ -68,7 +61,6 @@ export default {
       },
     onClick(event) {
         if(this.$refs.buttonWrapper.contains(event.target)){
-            console.log('button')
             if (this.visible === true) {
                 this.close()
             }else{
