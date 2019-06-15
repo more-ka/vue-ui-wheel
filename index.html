@@ -19,55 +19,11 @@
 <style>
 </style>
 <div id='app' style="padding:100px;width:420px;">
-    <g-popover>
-        <template slot="content" slot-scope="{close}">
-            <div><a href="http://qq.com">qq</a><g-button @click="close">关闭</g-button>
-            </div>
-        </template>
-        <g-button>点击</g-button>
-    </g-popover>
-    <g-popover position="bottom">
-        <template slot="content">
-            <div>hanfaiofnaifjiif</div>
-        </template>
-        <g-button>点击</g-button>
-    </g-popover>
-    <g-popover position="left">
-        <template slot="content">
-            <div>hanfaiofnaifsaif</div>
-        </template>
-        <g-button>点击</g-button>
-    </g-popover>
-    <g-popover position="right">
-        <template slot="content">
-            <div>hanfaiofnadssaif</div>
-        </template>
-        <g-button>点击</g-button>
-    </g-popover>
-    <g-popover trigger="hover">
-        <template slot="content">
-            <div>hanfaiofnaifjifjij</div>
-        </template>
-        <g-button>点击</g-button>
-    </g-popover>
-    <g-popover position="bottom" trigger="hover">
-        <template slot="content">
-            <div>hanfaiofnaifjiif</div>
-        </template>
-        <g-button>点击</g-button>
-    </g-popover>
-    <g-popover position="left" trigger="hover">
-        <template slot="content">
-            <div>hanfaiofnaifsaif</div>
-        </template>
-        <g-button>点击</g-button>
-    </g-popover>
-    <g-popover position="right" trigger="hover">
-        <template slot="content">
-            <div>hanfaiofnadssaif</div>
-        </template>
-        <g-button>点击</g-button>
-    </g-popover>
+    <g-collapse>
+        <g-collapse-item title="标题1">11</g-collapse-item>
+        <g-collapse-item title="标题2">22</g-collapse-item>
+        <g-collapse-item title="标题3">33</g-collapse-item>
+    </g-collapse>
 </div>
 
 <script src="./src/app.js"></script>
