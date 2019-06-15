@@ -12,48 +12,53 @@
 <script>
     export default {
         name: "collapse-item",
-        props:{
-            title:{
+        props: {
+            title: {
                 type: String,
                 required: true
+            },
+            name: {
+                type: String
             }
         },
-        data(){
+        data() {
             return {
                 open: false
             }
         },
-        mounted(){
-            this.eventBus &&
-          this.eventBus.$on('update:selected',(vm)=>{
-              if(vm !== this){
-                  this.close()
-              }
-          })
-        },
-        methods:{
-          close(){
-              this.open = false
-          },
-            toggle(){
-                if(this.open){
-                    this.open = false
+        mounted() {
+            this.eventBus.$on('update:selected', (name) => {
+                if (this.name !== name) {
+                    this.close()
                 }else{
-                    this.open = true
-                    this.eventBus &&
-                    this.eventBus.$emit('update:selected',this)
+                    this.show()
+                }
+            })
+        },
+        methods: {
+            show(){
+                this.open = true
+            },
+            close() {
+                this.open = false
+            },
+            toggle() {
+                if (this.open) {
+                    this.open = false
+                } else {
+                    this.eventBus.$emit('update:selected', this.name)
                 }
             }
         },
-        inject:['eventBus']
+        inject: ['eventBus']
     }
 </script>
 
 <style lang="scss" scoped>
-    .collapseItem{
+    .collapseItem {
         $border-radius: 4px;
-        .title{
-            border:1px solid gray;
+        .title {
+            border: 1px solid gray;
             margin-top: -1px;
             margin-left: -1px;
             margin-right: -1px;
@@ -62,15 +67,15 @@
             display: flex;
             align-items: center;
         }
-        &:first-child{
-            .title{
+        &:first-child {
+            .title {
                 border-top-left-radius: $border-radius;
                 border-top-right-radius: $border-radius;
             }
         }
-        &:last-child{
+        &:last-child {
             margin-bottom: -1px;
-            .title:last-child{
+            .title:last-child {
                 border-bottom-left-radius: $border-radius;
                 border-bottom-right-radius: $border-radius;
             }

@@ -19,11 +19,12 @@
 <style>
 </style>
 <div id='app' style="padding:100px;width:420px;">
-    <g-collapse single>
-        <g-collapse-item title="标题1">11</g-collapse-item>
-        <g-collapse-item title="标题2">22</g-collapse-item>
-        <g-collapse-item title="标题3">33</g-collapse-item>
+    <g-collapse :selected.sync="selectedTab">
+        <g-collapse-item title="标题1" name="1">11</g-collapse-item>
+        <g-collapse-item title="标题2" name="2">22</g-collapse-item>
+        <g-collapse-item title="标题3" name="3">33</g-collapse-item>
     </g-collapse>
+    {{selectedTab}}
 </div>
 
 <script src="./src/app.js"></script>

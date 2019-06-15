@@ -6,33 +6,38 @@
 
 <script>
     import Vue from 'vue'
+
     export default {
         name: "collapse",
-        props:{
-          single:{
-              type: Boolean,
-              default: false
-          }
+        props: {
+            selected: {
+                type: String
+            }
         },
-        data(){
+        data() {
             return {
                 eventBus: new Vue()
             }
         },
-        provide(){
-            if(this.single){
-                return {
-                    eventBus: this.eventBus
-                }
+        provide() {
+            return {
+                eventBus: this.eventBus
             }
+        },
+        mounted() {
+            this.eventBus.$emit('update:selected', this.selected);
+            this.eventBus.$on('update:selected',(name)=>{
+                console.log(name)
+                this.$emit('update:selected',name)
+            })
         }
     }
 </script>
 
 <style lang="scss" scoped>
     $border-radius: 4px;
-    .collapse{
+    .collapse {
         border-radius: $border-radius;
-        border:1px solid gray;
+        border: 1px solid gray;
     }
 </style>
