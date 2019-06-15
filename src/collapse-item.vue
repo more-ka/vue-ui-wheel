@@ -11,7 +11,7 @@
 
 <script>
     export default {
-        name: "collapse-item",
+        name: "GuLuCollapseItem",
         props: {
             title: {
                 type: String,
@@ -23,30 +23,25 @@
         },
         data() {
             return {
-                open: false
+                open: false,
             }
         },
         mounted() {
-            this.eventBus.$on('update:selected', (name) => {
-                if (this.name !== name) {
-                    this.close()
+            this.eventBus.$on('update:selected', (names) => {
+                if (names.indexOf(this.name) >= 0) {
+                    this.open = true
                 }else{
-                    this.show()
+                    this.open = false
                 }
             })
         },
         methods: {
-            show(){
-                this.open = true
-            },
-            close() {
-                this.open = false
-            },
             toggle() {
                 if (this.open) {
-                    this.open = false
+                    this.eventBus.$emit('update:removeSelected', this.name)
+
                 } else {
-                    this.eventBus.$emit('update:selected', this.name)
+                    this.eventBus.$emit('update:addSelected', this.name)
                 }
             }
         },
