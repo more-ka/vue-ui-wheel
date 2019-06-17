@@ -1,8 +1,8 @@
 <template>
     <button class="g-button" :class="{[`icon-${iconPosition}`]:true}" @click="$emit('click')">
-        <g-icon v-if="icon && loading !== true" class="icon" :name="icon"></g-icon>
+        <g-icon v-if="icon && loading !== true" class="icon" :name="icon">{{icon}}</g-icon>
         <g-icon name="loading" class="loading icon" v-if="loading"></g-icon>
-        <div class="content">
+        <div class="g-button-content">
             <slot></slot>
         </div>
     </button>
@@ -26,17 +26,26 @@
     }
 </script>
 <style lang="scss">
+        $button-height: 32px;
+        $font-size: 14px;
+        $button-bg: white;
+        $button-bg-active: #eee;
+        $border-radius: 4px;
+        $border-color: #999;
+        $color: #333;
+        $border-color-hover: #666;
+    body {font-size: $font-size}
     .g-button {
         @keyframes rotate { 0%{transform:rotate(0deg)} 100%{transform:rotate(360deg)} }
-        font-size: var(--font-size); height: var(--button-height); padding: 0 .7em; display: inline-flex; justify-content: center; align-items: center; border: 1px solid var(--border-color); border-radius: var(--border-radius); background: var(--button-bg); vertical-align: top;
-        > .content { order: 2; }
-        > .icon { order: 1; margin-right: .4em; }
-        &:hover { border-color: var(--border-color-hover); }
-        &:active { background-color: var(--button-bg-active); }
+        font-size: $font-size; height: $button-height; padding: 0 .5em; display: inline-flex; justify-content: center; align-items: center; border: 1px solid $border-color; border-radius: $border-radius; background: $button-bg; vertical-align: top;
+        > .g-button-content { order: 2; }
+        > .icon { order: 1; margin-right: .2em; }
+        &:hover { border-color: $border-color-hover; }
+        &:active { background-color: $button-bg-active; }
         &:focus { outline: none; }
         &.icon-right {
-            > .content { order: 1; }
-            > .icon { order: 2; margin-right: 0; margin-left: .4em; } }
+            > .g-button-content { order: 1; }
+            > .icon { order: 2; margin-right: 0; margin-left: .2em; } }
         .loading{ animation: rotate 2s infinite linear; }
     }
 
