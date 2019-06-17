@@ -1,16 +1,59 @@
 <template>
-    <div>
-        <g-input value="普通输入框"></g-input>
-        <g-input :disabled="true" value="disabled输入框"></g-input>
-        <g-input :readonly="true" value="readonly输入框"></g-input>
+    <div style="width:100%">
+        <div style="padding:16px 0">
+            <p>
+                <strong>预览</strong>
+            </p>
+            <g-input value="默认输入框"></g-input>
+            <g-input value="disabled 输入框" disabled></g-input>
+            <g-input value="readonly 输入框" readonly></g-input>
+        </div>
+        <p>
+            <strong>代码</strong>
+        </p>
+        <pre><code>{{content1}}</code></pre>
+        <h2>双向绑定</h2>
+        <p>
+            <strong>预览</strong>
+        </p>
+        <g-input v-model="value"></g-input>
+        <div>
+            value: {{value}}
+        </div>
+        <p>
+            <strong>预览</strong>
+        </p>
+        <pre><code>{{content2}}</code></pre>
+
     </div>
 </template>
 
 <script>
     import Input from '../../../src/input'
+
     export default {
-        components:{
+        components: {
             'g-input': Input
+        },
+        data() {
+            return {
+                value: '53231323',
+                content1: `
+<g-input value="默认输入框"></g-input>
+<g-input value="disabled 输入框" disabled></g-input>
+<g-input value="readonly 输入框" readonly></g-input>
+`.trim(),
+                content2: `
+<g-input v-model="value"></g-input>
+<div>
+    value: {{value}}
+</div>
+
+data:{
+    value: "1"
+}
+`.trim()
+            }
         }
     }
 </script>
