@@ -35,8 +35,9 @@
         $color: #333;
         $border-color-hover: #666;
     body {font-size: $font-size}
-    .g-button {
         @keyframes rotate { 0%{transform:rotate(0deg)} 100%{transform:rotate(360deg)} }
+        .g-button {
+            margin-top: -7px;
         font-size: $font-size; height: $button-height; padding: 0 .5em; display: inline-flex; justify-content: center; align-items: center; border: 1px solid $border-color; border-radius: $border-radius; background: $button-bg; vertical-align: top;
         > .g-button-content { order: 2; }
         > .icon { order: 1; margin-right: .2em; }

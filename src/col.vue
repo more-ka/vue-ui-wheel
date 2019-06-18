@@ -67,7 +67,6 @@
     .col{
         width: 50%;
         height: 100%;
-        border: 1px solid lightslategrey;
         $class: col-;
         @for $n from 1 through 24 {
             &.#{$class}#{$n} {

@@ -1,11 +1,11 @@
 <template>
     <div class="popover" ref="popover">
-        <div ref="contentWrapper" class="content-wrapper" v-if="visible" :class=`position-${position}`>
+        <div ref="contentWrapper" class="content-wrapper" v-if="visible" :class="{[`position-${position}`]:true}">
             <slot name="content" :close="close"></slot>
         </div>
-        <div ref="buttonWrapper">
+        <span ref="buttonWrapper">
             <slot></slot>
-        </div>
+        </span>
     </div>
 </template>
 
@@ -118,7 +118,6 @@
     $distance: 12px;
     .popover {
         display: inline-block;
-        vertical-align: top;
         position: relative;
     }
     .content-wrapper {

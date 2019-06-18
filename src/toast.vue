@@ -2,7 +2,7 @@
     <div class="toast" ref="wrapper" :class="toastClasses">
         <div class="content">
             <slot v-if="!enableHtml"></slot>
-            <div v-else v-html="$slots.default[0]"></div>
+            <span v-else v-html="$slots.default[0]"></span>
         </div>
         <span class="line" v-if="closeButton" ref="line"></span>
         <span class="close" v-if="closeButton" @click="onClickButton">{{closeButton.text}}</span>
@@ -14,7 +14,7 @@
         props:{
             autoClose:{
                 type: [Boolean,Number],
-                default: 4,
+                default: 300,
                 validator(value){
                     return value === false || typeof value === "number"
                 }

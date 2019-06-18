@@ -40,7 +40,7 @@
 <style lang="scss" scoped>
     .row{
         display: flex;
-        height: 80px;
+        height: 40px;
         margin-bottom: 20px;
         flex-wrap: wrap;
         &.align-left{

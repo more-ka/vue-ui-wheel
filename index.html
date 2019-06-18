@@ -7,22 +7,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>轮子</title>
     <style>
-        * {margin: 0;padding: 0;box-sizing: border-box;}
     </style>
     <style type="text/css">
-
+        *{margin: 0;padding: 0;box-sizing: border-box}
     </style>
 </head>
 <body>
 <style>
 </style>
-<div id='app' style="padding:100px;width:420px;">
-    <g-collapse :selected.sync="selectedTab">
-        <g-collapse-item title="标题1" name="1">11</g-collapse-item>
-        <g-collapse-item title="标题2" name="2">22</g-collapse-item>
-        <g-collapse-item title="标题3" name="3">33</g-collapse-item>
-    </g-collapse>
-    {{selectedTab}}
+<div id='app' style="padding: 32px;">
+    <g-tabs :selected="selected">
+        <g-tabs-head>
+          <g-tabs-item name="1">1</g-tabs-item>
+          <g-tabs-item name="2">2</g-tabs-item>
+          <g-tabs-item name="3">3</g-tabs-item>
+        </g-tabs-head>
+        <g-tabs-body>
+          <g-tabs-pane name="1">content 1</g-tabs-pane>
+          <g-tabs-pane name="2">content 2</g-tabs-pane>
+          <g-tabs-pane name="3">content 3</g-tabs-pane>
+        </g-tabs-body>
+      </g-tabs>
 </div>
 
 <script src="./src/app.js"></script>

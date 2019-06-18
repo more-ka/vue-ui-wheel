@@ -1,5 +1,5 @@
 <template>
-    <div style="width:100%">
+    <div>
         <div style="padding:16px 0">
             <p>
                 <strong>预览</strong>
