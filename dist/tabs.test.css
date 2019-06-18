@@ -1,0 +1,41 @@
+.tabs-item[data-v-846852] {
+  padding: 0 16px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.tabs-item.disabled[data-v-846852] {
+    background: #eee;
+    cursor: no-drop;
+}
+.tabs-item.active[data-v-846852] {
+    color: deepskyblue;
+    font-weight: bold;
+}
+
+.tabs-body{
+
+}
+.tabs-pane[data-v-377dab] {
+  padding: 32px;
+}
+
+.tabs-head[data-v-3cfddf] {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 1px solid lightgrey;
+  position: relative;
+}
+.tabs-head > .line[data-v-3cfddf] {
+    position: absolute;
+    bottom: 0;
+    border-bottom: 2px solid deepskyblue;
+    transition: all .3s;
+}
+.tabs-head > .actions-wrapper[data-v-3cfddf] {
+    margin-left: auto;
+}
+
