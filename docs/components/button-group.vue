@@ -26,12 +26,12 @@
                 margin-left:-1px;
             }
             &:first-child{
-                border-top-left-radius: 4px;
-                border-bottom-left-radius: 4px;
+                border-top-left-radius: var(--border-radius);
+                border-bottom-left-radius: var(--border-radius);
             }
             &:last-child{
-                border-top-right-radius: 4px;
-                border-bottom-right-radius: 4px;
+                border-top-right-radius: var(--border-radius);
+                border-bottom-right-radius: var(--border-radius);
             }
             &:hover{
                 position: relative;

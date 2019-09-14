@@ -34,15 +34,17 @@
         $border-color: #999;
         $color: #333;
         $border-color-hover: #666;
-    body {font-size: $font-size}
+    body {font-size: 14px}
         @keyframes rotate { 0%{transform:rotate(0deg)} 100%{transform:rotate(360deg)} }
         .g-button {
             margin-top: -7px;
-        font-size: $font-size; height: $button-height; padding: 0 .5em; display: inline-flex; justify-content: center; align-items: center; border: 1px solid $border-color; border-radius: $border-radius; background: $button-bg; vertical-align: top;
+        font-size: $font-size; height:  32px; padding: 0 .5em; display: inline-flex; 
+        justify-content: center; align-items: center; border: 1px solid #d1cdcd; 
+        border-radius: 4px; background: white; vertical-align: top;
         > .g-button-content { order: 2; }
         > .icon { order: 1; margin-right: .2em; }
-        &:hover { border-color: $border-color-hover; }
-        &:active { background-color: $button-bg-active; }
+        &:hover { border-color: #666; }
+        &:active { background-color: #E5E5E5; }
         &:focus { outline: none; }
         &.icon-right {
             > .g-button-content { order: 1; }

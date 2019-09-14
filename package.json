@@ -1,7 +1,7 @@
 {
   "name": "vue-ui-wheel",
-  "version": "0.0.7",
-  "description": "这是一个UI框架",
+  "version": "1.0.0",
+  "description": "一个基于Vue的UI框架",
   "main": "dist/index.js",
   "scripts": {
     "start": "parcel index.html --no-cache",
