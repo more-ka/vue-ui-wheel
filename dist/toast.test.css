@@ -1,0 +1,47 @@
+@keyframes fade-data-v-6e57bc {
+0% {
+    opacity: 0;
+}
+100% {
+    opcity: 100%;
+}
+}
+.toast[data-v-6e57bc] {
+  animation: fade-data-v-6e57bc 1s;
+  position: fixed;
+  left: 50%;
+  color: white;
+  padding: 0 16px;
+  border-radius: 4px;
+  min-height: 40px;
+  font-style: 14px;
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.74);
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+}
+.toast .content[data-v-6e57bc] {
+    padding: 8px 0;
+}
+.toast .line[data-v-6e57bc] {
+    border-left: 1px solid #666;
+    height: 100%;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.toast .close[data-v-6e57bc] {
+    flex-shrink: 0;
+}
+.toast.position-top[data-v-6e57bc] {
+    top: 0;
+    transform: translateX(-50%);
+}
+.toast.position-middle[data-v-6e57bc] {
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.toast.position-bottom[data-v-6e57bc] {
+    bottom: 0;
+    transform: translateX(-50%);
+}
+

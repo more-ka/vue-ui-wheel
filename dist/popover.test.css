@@ -1,0 +1,88 @@
+.popover[data-v-af7f04] {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+.content-wrapper[data-v-af7f04] {
+  position: absolute;
+  border-radius: 4px;
+  left: 0;
+  border: 1px solid black;
+  padding: 0.5em 1em;
+  /*box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);*/
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.5));
+  background: white;
+  max-width: 16em;
+  word-break: break-all;
+}
+.content-wrapper[data-v-af7f04]::before, .content-wrapper[data-v-af7f04]::after {
+    position: absolute;
+    display: block;
+    content: '';
+    border: 6px solid transparent;
+    width: 0;
+    height: 0;
+}
+.content-wrapper.position-top[data-v-af7f04] {
+    transform: translateY(-100%);
+    margin-top: -12px;
+}
+.content-wrapper.position-top[data-v-af7f04]::before {
+      border-top-color: black;
+      top: 100%;
+      border-bottom: none;
+}
+.content-wrapper.position-top[data-v-af7f04]::after {
+      border-top-color: white;
+      top: calc(100% - 1px);
+      border-bottom: none;
+}
+.content-wrapper.position-bottom[data-v-af7f04] {
+    margin-top: 12px;
+}
+.content-wrapper.position-bottom[data-v-af7f04]::before {
+      border-bottom-color: black;
+      bottom: 100%;
+      border-top: none;
+}
+.content-wrapper.position-bottom[data-v-af7f04]::after {
+      border-bottom-color: white;
+      bottom: calc(100% - 1px);
+      border-top: none;
+}
+.content-wrapper.position-left[data-v-af7f04] {
+    transform: translateX(-100%);
+    margin-left: -12px;
+}
+.content-wrapper.position-left[data-v-af7f04]::before {
+      border-left-color: black;
+      transform: translateY(-50%);
+      top: 50%;
+      left: 100%;
+      border-right: none;
+}
+.content-wrapper.position-left[data-v-af7f04]::after {
+      border-left-color: white;
+      transform: translateY(-50%);
+      top: 50%;
+      left: calc(100% - 1px);
+      border-right: none;
+}
+.content-wrapper.position-right[data-v-af7f04] {
+    margin-left: 12px;
+}
+.content-wrapper.position-right[data-v-af7f04]::before {
+      border-right-color: black;
+      transform: translateY(-50%);
+      top: 50%;
+      right: 100%;
+      border-left: none;
+}
+.content-wrapper.position-right[data-v-af7f04]::after {
+      border-right-color: white;
+      transform: translateY(-50%);
+      top: 50%;
+      right: calc(100% - 1px);
+      border-left: none;
+}
+

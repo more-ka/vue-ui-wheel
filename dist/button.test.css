@@ -1,0 +1,44 @@
+.g-icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden; }
+
+.g-button {
+  font-size: var(--font-size);
+  height: var(--button-height);
+  padding: 0 .7em;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background: var(--button-bg);
+  vertical-align: top; }
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+  .g-button > .content {
+    order: 2; }
+  .g-button > .icon {
+    order: 1;
+    margin-right: .4em; }
+  .g-button:hover {
+    border-color: var(--border-color-hover); }
+  .g-button:active {
+    background-color: var(--button-bg-active); }
+  .g-button:focus {
+    outline: none; }
+  .g-button.icon-right > .content {
+    order: 1; }
+  .g-button.icon-right > .icon {
+    order: 2;
+    margin-right: 0;
+    margin-left: .4em; }
+  .g-button .loading {
+    animation: rotate 2s infinite linear; }
+
