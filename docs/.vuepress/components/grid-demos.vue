@@ -1,5 +1,6 @@
 <template>
     <div style="padding-top: 16px;">
+        <p>Grid - 网格，最多可分为24小格，可设置 gutter 和空白，默认支持响应式布局</p>
         <h2>24格网格</h2>
         <p><strong>预览</strong></p>
         <g-row>
@@ -36,7 +37,7 @@
             <g-col span="2"><div>2</div></g-col>
         </g-row>
         <p><strong>代码</strong></p>
-        <pre><code>{{content1}}</code></pre>
+        <pre><code class="html">{{content1}}</code></pre>
         <h2>设置 gutter</h2>
         <p><strong>预览</strong></p>
         <g-row gutter="10">
@@ -60,7 +61,7 @@
         </g-row>
         <p><strong>代码</strong></p>
         <pre><code>{{content2}}</code></pre>
-        <h2>设置 offset</h2>
+        <h2>设置 空白</h2>
         <p><strong>预览</strong></p>
         <g-row gutter="10">
             <g-col span="8"><div>8</div></g-col>
@@ -107,7 +108,7 @@ export default {
     return {
       content1: `
       * {box-sizing: border-box;}
-                <g-row>
+        <g-row>
             <g-col span="8"><div>8</div></g-col>
             <g-col span="8"><div>8</div></g-col>
             <g-col span="8"><div>8</div></g-col>
@@ -167,7 +168,8 @@ export default {
         `
         .replace(/^ {8}/gm, "")
         .trim(),
-      content3: `<g-row gutter="10">
+      content3: `
+        <g-row gutter="10">
             <g-col span="8"><div>8</div></g-col>
             <g-col span="8"  offset="8"><div>8</div></g-col>
 

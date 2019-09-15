@@ -1,6 +1,6 @@
 <template>
   <div style="padding-top: 16px;">
-    <h2>简单用法</h2>
+    <h2>使用方法</h2>
     <p>
       <strong>预览</strong>
     </p>
@@ -20,7 +20,8 @@
     <p>
       <strong>代码</strong>
     </p>
-    <pre><code>{{content}}</code></pre>
+    <pre><code>{{content1}}</code></pre>
+    <pre><code>{{content2}}</code></pre>
   </div>
 </template>
 <script>
@@ -34,10 +35,12 @@
     data () {
       return {
         selected: '1',
-        content: `
+        content1: `
           data:{
             selected: '1'
           }
+      `.replace(/^ {8}/gm, '').trim(),
+      content2: `
           <g-tabs :selected="selected">
             <g-tabs-head>
               <g-tabs-item name="1">1</g-tabs-item>

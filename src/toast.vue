@@ -14,7 +14,7 @@
         props:{
             autoClose:{
                 type: [Boolean,Number],
-                default: 300,
+                default: 30,
                 validator(value){
                     return value === false || typeof value === "number"
                 }
