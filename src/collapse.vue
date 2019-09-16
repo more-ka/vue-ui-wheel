@@ -47,17 +47,16 @@
                 this.eventBus.$emit('update:selected',selectedCopy);
                 this.$emit('update:selected',selectedCopy)
             })
-            this.$children.forEach((vm)=>{
-                vm.single = this.single
-            })
+            // this.$children.forEach((vm)=>{
+            //     vm.single = this.single
+            // })
         }
     }
 </script>
 
 <style lang="scss" scoped>
-    $border-radius: 4px;
     .collapse {
-        border-radius: $border-radius;
+        border-radius: 4px;
         border: 1px solid gray;
     }
 </style>
