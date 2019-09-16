@@ -27,6 +27,6 @@
         }
     }
     .fade-enter-active, .fade-leave-active {
-        transition: all 0.5s;
+        transition: all 1s;
     }
 </style>

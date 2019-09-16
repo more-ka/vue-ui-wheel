@@ -10,6 +10,7 @@
 </script>
 <style lang="scss" scoped>
     .content{
-        flex-grow: 1;
+        margin: 0;
+        padding: 0;
     }
 </style>

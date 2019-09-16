@@ -30,7 +30,7 @@
         &.hasSider{
             display: flex;
             flex-direction: row;
-            min-height: 30vh;
+            min-height: 10vh;
         }
     }
 </style>

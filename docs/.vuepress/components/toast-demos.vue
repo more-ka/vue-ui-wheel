@@ -125,10 +125,4 @@ methods: {
   }
 };
 </script>
-<style>
-.toast {
-  z-index: 30 !important;
-  cursor: pointer;
-}
-</style>
 
