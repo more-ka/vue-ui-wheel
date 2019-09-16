@@ -97,6 +97,7 @@
         align-items: center;
         background:$toast-bg;
         box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.50);
+        z-index: 999;
         .content{
             padding: 8px 0;
         }

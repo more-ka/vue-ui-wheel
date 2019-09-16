@@ -3,6 +3,7 @@
     <span style="background: #F3F5F7;display:block;padding:8px 16px;border-radius:6px;">
       <h3>popover内容支持HTML</h3>
     </span>
+    <h3 style="padding-top: 16px;">点击按钮触发popover</h3>
     <p>
       <strong>预览</strong>
     </p>
